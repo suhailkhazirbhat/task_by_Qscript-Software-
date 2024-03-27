@@ -1,314 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QScript Coffee</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QScript Coffee</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <style>
         /* Reset Styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-body {
-  font-family: Arial, sans-serif;
-}
+        body {
+            font-family: Arial, sans-serif;
+        }
 
-/* Global Styles */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
+        /* Global Styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-header {
-  /* background-color: #333; */
-  color: #fff;
-  padding: 20px 0;
-}
+        header {
+            /* background-color: #333; */
+            color: #fff;
+            padding: 20px 0;
+        }
 
-header .container {
-    font-size: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+        header .container {
+            font-size: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-nav ul {
-  list-style-type: none;
-}
+        nav ul {
+            list-style-type: none;
+        }
 
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
 
-nav ul li a {
-  text-decoration: none;
-  color: #fff;
-}
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
 
-section {
-  padding: 50px 0;
-}
+        section {
+            padding: 50px 0;
+        }
 
-.hero {
-  background-image: url('coffee-shop.jpg');
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  text-align: center;
-}
+        .hero {
+            background-image: url('coffee-shop.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+        }
 
-.about, .menu, .contact {
-  background-color: #f9f9f9;
-}
+        .about,
+        .menu,
+        .contact {
+            background-color: #f9f9f9;
+        }
 
-.btn {
-  display: inline-block;
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-}
+        .btn {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
 
-.btn:hover {
-  background-color: #555;
-}
+        .btn:hover {
+            background-color: #555;
+        }
 
-/* Form Styles */
-form {
-  max-width: 500px;
-  margin: 0 auto;
-}
+        /* Form Styles */
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
 
-input[type="name"],
-input[type="email"],
-input[type="number"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-}
+        input[type="name"],
+        input[type="email"],
+        input[type="number"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
 
-button {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-button:hover {
-  background-color: #555;
-}
+        button:hover {
+            background-color: #555;
+        }
 
-/* Footer Styles */
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-}
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
-  .hidden {
-    
-    display: none;
-  }
-  #myElement{
-    /* background-image: url("https://media.istockphoto.com/id/466732980/photo/coffee-bean.jpg?s=1024x1024&w=is&k=20&c=Z-lyTkRHt-4fwTpu-taZtfbZpRNZhtlrtbocio7O6Nc="); */
-    color: #fff;
-    background-color: #333;
-  }
-  .navbar {
-    background-image: url("https://media.istockphoto.com/id/466732980/photo/coffee-bean.jpg?s=1024x1024&w=is&k=20&c=Z-lyTkRHt-4fwTpu-taZtfbZpRNZhtlrtbocio7O6Nc=");
-    color: #fff;
-    padding: 20px 0;
-  }
-  
-  .container1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    margin: 0;
-  }
-  
-  /* ul{
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+       
+        #myElement {
+            /* background-image: url("https://media.istockphoto.com/id/466732980/photo/coffee-bean.jpg?s=1024x1024&w=is&k=20&c=Z-lyTkRHt-4fwTpu-taZtfbZpRNZhtlrtbocio7O6Nc="); */
+            color: #fff;
+            background-color: #333;
+            display: none;
+        }
+
+        .navbar {
+            background-image: url("https://media.istockphoto.com/id/466732980/photo/coffee-bean.jpg?s=1024x1024&w=is&k=20&c=Z-lyTkRHt-4fwTpu-taZtfbZpRNZhtlrtbocio7O6Nc=");
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .container1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            margin: 0;
+        }
+
+        /* ul{
     list-style-type: none;
   } */
-  .nav-links {
-    list-style-type: none;
-    display: flex;
-  }
-  
-  .nav-links li {
-    margin-right: 20px;
-  }
-  
-  .nav-links li a {
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  .toggle-button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    display: none;
-  }
-  
-  .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 5px auto;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      text-align: center;
-      padding-top: 20px;
-    }
-  
-    .nav-links li {
-      margin: 0;
-    }
-  
-    .toggle-button {
-      display: block;
-    }
-  
-    .active .bar:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
-    }
-  
-    .active .bar:nth-child(2) {
-      opacity: 0;
-    }
-  
-    .active .bar:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
-    }
-  }
-  
+        .nav-links {
+            list-style-type: none;
+            display: flex;
+        }
 
+        .nav-links li {
+            margin-right: 20px;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .toggle-button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            display: none;
+        }
+
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin: 5px auto;
+            transition: all 0.3s ease-in-out;
+        }
+
+        @media screen and (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                text-align: center;
+                padding-top: 20px;
+            }
+
+            .nav-links li {
+                margin: 0;
+            }
+
+            .toggle-button {
+                display: block;
+            }
+
+            .active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+
+            .active .bar:nth-child(2) {
+                opacity: 0;
+            }
+
+            .active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+        }
     </style>
-  <header >
-    <nav class="navbar">
-        <div class="container1">
-            <h1>QScript Coffee</h1>
-          <button class="toggle-button" id="toggleButton" onclick="toggleVisibility()">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </button>
-    
-          <ul class="nav-links" id="navLinks">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+    <header>
+        <nav class="navbar">
+            <div class="container1">
+                <h1>QScript Coffee</h1>
+                <button class="toggle-button" id="toggleButton" onclick="toggleVisibility()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div id="myElement">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero"
+        style="background-image: url(https://watermark.lovepik.com/photo/20211121/large/lovepik-coffee-bean-picture_500651963.jpg);">
+        <div class="container">
+            <h1>Welcome to QScript Coffee</h1>
+            <h3>Discover the finest coffee and pastries in town.</h3>
+            <a href="#contact" class="btn">Contact Us</a>
         </div>
-        <div id="myElement"><ul >
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact</li>
-          </ul></div>
-      </nav>
-  </header>
+    </section>
 
-  <section class="hero" style="background-image: url(https://watermark.lovepik.com/photo/20211121/large/lovepik-coffee-bean-picture_500651963.jpg);">
-    <div class="container">
-      <h1>Welcome to QScript Coffee</h1>
-      <h3>Discover the finest coffee and pastries in town.</h3>
-      <a href="#contact" class="btn">Contact Us</a>
-    </div>
-  </section>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At QScript Coffee, we are passionate about delivering the perfect cup of coffee to our customers. Our
+                mission is to provide a welcoming environment where you can enjoy specialty coffee and freshly baked
+                pastries made with love.</p>
+        </div>
+    </section>
 
-  <section id="about" class="about">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>At QScript Coffee, we are passionate about delivering the perfect cup of coffee to our customers. Our mission is to provide a welcoming environment where you can enjoy specialty coffee and freshly baked pastries made with love.</p>
-    </div>
-  </section>
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Menu</h2>
+            <div class="menu-item">
+                <h3>Specialty Coffee</h3>
+                <p>A selection of premium coffee blends sourced from around the world, expertly roasted to perfection.
+                </p>
+            </div>
+            <div class="menu-item">
+                <h3>Fresh Pastries</h3>
+                <p>Indulge in our delectable range of freshly baked pastries, including croissants, muffins, and more.
+                </p>
+            </div>
+        </div>
+    </section>
 
-  <section id="menu" class="menu">
-    <div class="container">
-      <h2>Menu</h2>
-      <div class="menu-item">
-        <h3>Specialty Coffee</h3>
-        <p>A selection of premium coffee blends sourced from around the world, expertly roasted to perfection.</p>
-      </div>
-      <div class="menu-item">
-        <h3>Fresh Pastries</h3>
-        <p>Indulge in our delectable range of freshly baked pastries, including croissants, muffins, and more.</p>
-      </div>
-    </div>
-  </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
 
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-     
-      <form action="https://formspree.io/f/xlekyqdb"
-      method="POST">
-      <input type="name" name="name"placeholder="Your Name " required>
-      <input type="email"name="email" placeholder="Your Email " required>
-      <input type="number"name="number" placeholder="your Mobile Number" required>
-      <textarea name="area" id="" placeholder="How Can I Help You " required></textarea>
-    
-        <button type="submit" value="Send Message">Send Message</button>
-      </form>
-    </div>
-  </section>
-  <section>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.195215406006!2d-122.40756148517339!3d37.78369297975128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808f9f7fcb7f%3A0x3f39cd2586404d27!2sGoogleplex!5e0!3m2!1sen!2sus!4v1648479706761!5m2!1sen!2sus" width="100%" height="20%" style="border:0;" allowfullscreen="" loading="lazy"> </iframe>
-  </section>
+            <form action="https://formspree.io/f/xlekyqdb" method="POST">
+                <input type="name" name="name" placeholder="Your Name " required>
+                <input type="email" name="email" placeholder="Your Email " required>
+                <input type="number" name="number" placeholder="your Mobile Number" required>
+                <textarea name="area" id="" placeholder="How Can I Help You " required></textarea>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 QScript Coffee. All rights reserved.</p>
-    </div>
-  </footer>
+                <button type="submit" value="Send Message">Send Message</button>
+            </form>
+        </div>
+    </section>
 
-  <script >
-    const toggleButton = document.getElementById('toggleButton');
-const navLinks = document.getElementById('navLinks');
+    <section>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.195215406006!2d-122.40756148517339!3d37.78369297975128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808f9f7fcb7f%3A0x3f39cd2586404d27!2sGoogleplex!5e0!3m2!1sen!2sus!4v1648479706761!5m2!1sen!2sus"
+            width="100%" height="20%" style="border:0;" allowfullscreen="" loading="lazy"> </iframe>
+    </section>
 
-toggleButton.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
-  console.log("hi")
-});
-function toggleVisibility() {
-    var element = document.getElementById('myElement');
-    if (element.style.display === 'none') {
-      element.style.display = 'block'; // or 'inline', 'flex', etc. depending on the element
-    } else {
-      element.style.display = 'none';
-    }
-  }
-  </script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 QScript Coffee. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const toggleButton = document.getElementById('toggleButton');
+        const navLinks = document.getElementById('navLinks');
+
+        toggleButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            console.log("hi")
+        });
+        function toggleVisibility() {
+            var element = document.getElementById('myElement');
+            if (element.style.display === 'none') {
+                element.style.display = 'block'; // or 'inline', 'flex', etc. depending on the element
+            } else {
+                element.style.display = 'none';
+            }
+        }
+    </script>
 </body>
+
 </html>
